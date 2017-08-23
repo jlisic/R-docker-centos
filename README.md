@@ -1,5 +1,5 @@
 
-# Centos R Docker #
+# R Docker Centos#
 
 ## Overview ##
 
@@ -21,10 +21,12 @@ Centos MRO Dockerfiles can use any MRO version >= 3.3.1.
 Earlier of MRO are not supported due to changes in the installation script.
 In addition only Centos 7 is supported at this time due to issues with getopt on Centos 6.
 
-To install a specific version of MRO use the following command
+To install a specific version of MRO use the following command:
+
 `
-docker build -t centos-7-mro --build-arg R_VER=3.4.0 https://www.github.com/jlisic/centos-r-docker/centos-7-mro/Dockerfile 
+docker build -t centos-7-mro --build-arg R_VER=3.4.0  https://raw.githubusercontent.com/jlisic/R-docker-centos/master/centos-7-mro/Dockerfile
 `
+
 The default version is set to 3.3.1. 
 
 
