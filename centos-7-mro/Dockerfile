@@ -37,7 +37,7 @@ RUN yum -y install wget make bzip2-devel gcc-c++ gcc-gfortran libX11-devel libic
 
 
 # get MRO
-RUN wget https://mran.microsoft.com/install/mro/${R_VER}/microsoft-r-open-${R_VER}.tar.gz  
+RUN wget https://mran.blob.core.windows.net/install/mro/${R_VER}/microsoft-r-open-${R_VER}.tar.gz  
 RUN tar -xf microsoft-r-open-${R_VER}.tar.gz
 RUN ./microsoft-r-open/install.sh -u -a
 
